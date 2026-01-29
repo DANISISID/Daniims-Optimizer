@@ -1,100 +1,92 @@
-import { Download, Zap, Shield, Cpu, Gauge, MousePointer2, ShieldCheck, DownloadCloud } from 'lucide-react';
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniims Optimizer | Ultra Performance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #020617; }
+    </style>
+</head>
+<body class="text-white antialiased">
 
-export default function App() {
-  return (
-    <div className="min-h-screen text-white antialiased bg-gradient-to-br from-slate-950 via-violet-950 to-slate-950">
-      {/* Background Effects */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-violet-500/15 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-pink-500/10 rounded-full blur-3xl"></div>
-      </div>
-
-      {/* Navigation */}
-      <nav className="relative z-10 flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-violet-600 rounded-lg flex items-center justify-center">
-            <Zap className="w-5 h-5 fill-white text-white" />
-          </div>
-          <span className="text-xl font-extrabold tracking-tighter">
-            DANIIMS<span className="text-violet-500">OPT</span>
-          </span>
-        </div>
-        <a 
-          href="https://github.com/DANISISID/Daniims-Optimizer/releases/download/v1.0.5/GameOptimizer.Setup.1.0.5.exe"
-          className="px-5 py-2 bg-white text-black rounded-full text-sm font-bold hover:bg-violet-500 hover:text-white transition-all"
-        >
-          Download v1.0.5
-        </a>
-      </nav>
-
-      {/* Hero Section */}
-      <main className="relative z-10 max-w-7xl mx-auto px-6 pt-20 pb-32 text-center">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 backdrop-blur-sm mb-6 border border-violet-500/20">
-          <span className="w-2 h-2 rounded-full bg-violet-500 animate-pulse"></span>
-          <span className="text-xs font-semibold text-violet-300 uppercase tracking-wider">Nova Versão Disponível</span>
-        </div>
-        
-        <h1 className="text-6xl md:text-8xl font-extrabold mb-8 tracking-tighter leading-tight">
-          Domina o Jogo. <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-pink-500">
-            Elimina o Lag.
-          </span>
-        </h1>
-        
-        <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-12">
-          O otimizador definitivo para Fortnite, Roblox e CS. Limpeza de RAM em tempo real, prioridade de CPU e estabilização de FPS com apenas um clique.
-        </p>
-
-        <div className="flex flex-col items-center gap-4">
-          <a 
-            href="https://github.com/DANISISID/Daniims-Optimizer/releases/download/v1.0.5/GameOptimizer.Setup.1.0.5.exe"
-            className="group relative flex items-center gap-4 px-12 py-6 bg-violet-600 rounded-2xl text-2xl font-black transition-all hover:scale-105 active:scale-95 hover:bg-violet-500 shadow-[0_0_50px_-10px_rgba(139,92,246,0.3)]"
-          >
-            <DownloadCloud className="w-8 h-8" />
-            BAIXAR AGORA
-            <div className="absolute -top-3 -right-3 bg-pink-500 text-[10px] px-2 py-1 rounded-md rotate-12 group-hover:rotate-0 transition-transform">
-              GRÁTIS
-            </div>
-          </a>
-          <span className="text-gray-500 text-sm flex items-center gap-2">
-            <ShieldCheck className="w-4 h-4" /> Verificado e Seguro (v1.0.5)
-          </span>
-        </div>
-      </main>
-
-      {/* Features Section */}
-      <section id="features" className="relative z-10 max-w-7xl mx-auto px-6 py-20">
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-white/5 backdrop-blur-sm p-8 rounded-3xl border border-white/10">
-            <div className="w-12 h-12 bg-violet-500/20 rounded-2xl flex items-center justify-center mb-6">
-              <Cpu className="text-violet-400" />
-            </div>
-            <h3 className="text-xl font-bold mb-3">Turbo CPU</h3>
-            <p className="text-gray-500 leading-relaxed">Prioridade máxima de processamento para o teu jogo, reduzindo stutters instantaneamente.</p>
-          </div>
-
-          <div className="bg-white/5 backdrop-blur-sm p-8 rounded-3xl border border-white/10">
-            <div className="w-12 h-12 bg-pink-500/20 rounded-2xl flex items-center justify-center mb-6">
-              <Gauge className="text-pink-400" />
-            </div>
-            <h3 className="text-xl font-bold mb-3">RAM Cleaner</h3>
-            <p className="text-gray-500 leading-relaxed">Liberta memória bloqueada por processos inúteis do Windows automaticamente.</p>
-          </div>
-
-          <div className="bg-white/5 backdrop-blur-sm p-8 rounded-3xl border border-white/10">
-            <div className="w-12 h-12 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6">
-              <MousePointer2 className="text-blue-400" />
-            </div>
-            <h3 className="text-xl font-bold mb-3">Input Lag Zero</h3>
-            <p className="text-gray-500 leading-relaxed">Otimiza a resposta do rato e teclado para uma precisão cirúrgica em jogos competitivos.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="relative z-10 text-center py-20 text-gray-600 border-t border-white/5">
-        <p className="text-sm font-medium">© 2026 DANIIMS OPTIMIZER. Criado para ganhar.</p>
-      </footer>
+    <div class="fixed inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-0 left-0 w-[500px] h-[500px] bg-violet-500/15 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-pink-500/10 rounded-full blur-[120px]"></div>
     </div>
-  );
-}
+
+    <div class="relative z-10 min-h-screen bg-gradient-to-br from-slate-950 via-violet-950/20 to-slate-950">
+        
+        <main class="max-w-7xl mx-auto px-6 pt-32 pb-32 text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 backdrop-blur-sm mb-6 border border-violet-500/20">
+                <span class="w-2 h-2 rounded-full bg-violet-500 animate-pulse"></span>
+                <span class="text-xs font-semibold text-violet-300 uppercase tracking-wider">Nova Versão Disponível</span>
+            </div>
+            
+            <h1 class="text-6xl md:text-8xl font-extrabold mb-8 tracking-tighter leading-tight">
+                Domina o Jogo. <br />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-pink-500">
+                    Elimina o Lag.
+                </span>
+            </h1>
+            
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-12">
+                O otimizador definitivo para Fortnite, Roblox e CS. Limpeza de RAM em tempo real, prioridade de CPU e estabilização de FPS com apenas um clique.
+            </p>
+
+            <div class="flex flex-col items-center gap-4">
+                <a href="https://github.com/DANISISID/Daniims-Optimizer/releases/download/v1.0.5/GameOptimizer.Setup.1.0.5.exe"
+                   class="group relative flex items-center gap-4 px-12 py-6 bg-violet-600 rounded-2xl text-2xl font-black transition-all hover:scale-105 active:scale-95 hover:bg-violet-500 shadow-[0_0_50px_-10px_rgba(139,92,246,0.5)]">
+                    <i data-lucide="download-cloud" class="w-8 h-8"></i>
+                    BAIXAR AGORA
+                    <div class="absolute -top-3 -right-3 bg-pink-500 text-[10px] px-2 py-1 rounded-md rotate-12 group-hover:rotate-0 transition-transform">
+                        GRÁTIS
+                    </div>
+                </a>
+                <span class="text-gray-500 text-sm flex items-center gap-2">
+                    <i data-lucide="shield-check" class="w-4 h-4"></i> Verificado e Seguro (v1.0.5)
+                </span>
+            </div>
+        </main>
+
+        <section class="max-w-7xl mx-auto px-6 py-20">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/5 backdrop-blur-sm p-8 rounded-3xl border border-white/10 hover:border-violet-500/50 transition-colors">
+                    <div class="w-12 h-12 bg-violet-500/20 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="cpu" class="text-violet-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Turbo CPU</h3>
+                    <p class="text-gray-500 leading-relaxed">Prioridade máxima de processamento para o teu jogo, reduzindo stutters instantaneamente.</p>
+                </div>
+
+                <div class="bg-white/5 backdrop-blur-sm p-8 rounded-3xl border border-white/10 hover:border-pink-500/50 transition-colors">
+                    <div class="w-12 h-12 bg-pink-500/20 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="gauge" class="text-pink-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">RAM Cleaner</h3>
+                    <p class="text-gray-500 leading-relaxed">Liberta memória bloqueada por processos inúteis do Windows automaticamente.</p>
+                </div>
+
+                <div class="bg-white/5 backdrop-blur-sm p-8 rounded-3xl border border-white/10 hover:border-blue-500/50 transition-colors">
+                    <div class="w-12 h-12 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="mouse-pointer-2" class="text-blue-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Input Lag Zero</h3>
+                    <p class="text-gray-500 leading-relaxed">Otimiza a resposta do rato e teclado para uma precisão cirúrgica em jogos competitivos.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center py-20 text-gray-600 border-t border-white/5">
+            <p class="text-sm font-medium">© 2026 DANIIMS OPTIMIZER. Criado para ganhar.</p>
+        </footer>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
